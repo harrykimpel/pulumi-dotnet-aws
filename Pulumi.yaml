@@ -1,0 +1,7 @@
+name: myproject
+runtime: dotnet
+description: aws
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: aws-csharp

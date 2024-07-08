@@ -1,0 +1,4 @@
+config:
+  aws:region: us-east-1
+  newrelic:accountId: "NEW_RELIC_ACCOUNT_ID"
+  newrelic:apiKey: NEW_RELIC_USER_API_KEY‚
