@@ -60,15 +60,15 @@ class Program
             });
 
             var userData = @"
-                    #!/bin/bash
-                    echo ""Hello, World!"" > index.html
-                    nohup python -m SimpleHTTPServer 80 &
-                    ";
+                #!/bin/bash
+                echo ""Hello, World!"" > index.html
+                nohup python -m SimpleHTTPServer 80 &
+            ";
 
             List<object?> instanceIds = new List<object?>();
             for (int i = 0; i < amountEC2Instances; i++)
             {
-                string instanceName = "webserver-www-" + i.ToString();
+                string instanceName = $"webserver-www-{i}";
                 var server = new Instance(instanceName, new InstanceArgs
                 {
                     // t2.micro is available in the AWS free tier
